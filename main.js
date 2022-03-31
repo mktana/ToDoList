@@ -3,9 +3,6 @@ const container = $("#container")
 const inputBtn = $("#inputBtn")
 const todoCont = $(".todo-container")
 
-// console.log(container)
-// console.log(inputBtn)
-// console.log(todoCont)
 
 //create new li item
 inputBtn.click(function () {
@@ -23,8 +20,7 @@ inputBtn.click(function () {
 
     const deleteBtn = $(".far")
     const markBtn = $(".fas")
-    // console.log(deleteBtn)
-    // console.log(markBtn)
+ 
 
     // delete item
     deleteBtn.click(function (e) {
@@ -37,7 +33,7 @@ inputBtn.click(function () {
     markBtn.click(function (e) {
         const check = $(`#${e.target.id.split("-")[1]}`)
         console.log(e.target.id)
-        check.css("background-color", "#565555") 
+        check.css("background-color", "rgb(86 85 85 / 51%)") 
     })
 })
 
